@@ -1,0 +1,11 @@
+! ========================================================================== !
+!!                           !!!South East Cree noun stems                           
+! ========================================================================== !
+
+
+LEXICON STEMS
+!! @LEXNAME@ adds an affixmark and redirects to STEMLIST
+ 0:%> STEMLIST ;
+
+LEXICON STEMLIST
+asâm ANDECL "snowshoe" ;

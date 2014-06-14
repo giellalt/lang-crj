@@ -1,0 +1,244 @@
+! Divvun & Giellatekno - open source grammars for UNDEFINED language
+! Copyright © 2012 The University of Tromsø & the Norwegian Sámi Parliament
+! http://giellatekno.uit.no & http://divvun.no
+!
+! This program is free software; you can redistribute and/or modify
+! this file under the terms of the GNU General Public License as published by
+! the Free Software Foundation, either version 3 of the License, or
+! (at your option) any later version. The GNU General Public License
+! is found at http://www.gnu.org/licenses/gpl.html. It is
+! also available in the file $GTHOME/LICENSE.txt.
+!
+! Other licensing options are available upon request, please contact
+! giellatekno@hum.uit.no or divvun@samediggi.no
+
+! ========================================================================== !
+!!            !!!Southern East Cree morphological analyser
+! ========================================================================== !
+!! INTRODUCTION TO MORPHOLOGICAL ANALYSER OF Southern East Cree LANGUAGE.
+ 
+!! This is copied from Plains Cree
+
+Multichar_Symbols  !!≈ !!!@CODE@ definitions
+
+!! !!Analysis symbols
+
+!! The morphological analyses of wordforms of Plains Cree are presented
+!! in this system in terms of following symbols.
+!! (It is highly suggested to follow existing standards when adding new tags).
+
+!! POS
+
++N	        !!= * @CODE@ 
++V	        !!= * @CODE@ 
++A	        !!= * @CODE@ 
+
++Adv        !!= * @CODE@ 
++CC	        !!= * @CODE@ 
++CS	        !!= * @CODE@ 
++Interj     !!= * @CODE@ 
++Pron       !!= * @CODE@ 
++Num        !!= * @CODE@ 
+
++Loc        !!= * @CODE@ Locative
+
++Dim     !!= * @CODE@ Diminutive
+
++Ipc		!!=  * @CODE@ Indeclinable Particle
+
++Dem        !!= * @CODE@ Demonstrative 
++Prox	    !!= * @CODE@ Demonstrative Proximate
++Med	    !!= * @CODE@ Demonstrative Medial
++Dist	    !!= * @CODE@ Demonstrative Distal
+
+
+
+!! Verbal MSP
++Prs  !!= * @CODE@ 
++Fut  !!= * @CODE@
+
++Prt  !!= * @CODE@ 
++Prf  !!= * @CODE@ 
++Cnj  !!= * @CODE@ 
++Int  !!= * @CODE@ This tag is for the Future Intentional
++Def  !!= * @CODE@ This tag is for the Future Definite
+
++Ind  !!= * @CODE@ Indicative, aka Independent
++Imp  !!= * @CODE@ Imperative, consider deleting +Imp tag
++Del  !!= * @CODE@ Delayed imperative
++Imm  !!= * @CODE@ Immediate imperative, consider deleting +Imp tag
++Sbj  !!= * @CODE@ Subjunctive, aka Conjunct mode, ê-
++Cond !!= * @CODE@ TODO: Should Future Conditional be tagget Fut only? Conor: we will split the Future tags
+
+
+
+
++1Sg    !!= * @CODE@ first singular
++2Sg    !!= * @CODE@ etc
++3Sg    !!= * @CODE@
++4Sg   !!= * @CODE@ 3o is obviative (Wolvengrey 3’, cf. W diss. p. xi.)
++5Sg   !!= * @CODE@ 5Sg is further obviative person (Wolvengrey 3’’ cf. p. xi.)
+
++1Pl    !!= * @CODE@ 1Pl is exclusive plural (I, them, not you)
++2Pl    !!= * @CODE@
++3Pl    !!= * @CODE@
++4Pl   !!= * @CODE@
++12Pl   !!= * @CODE@ 12Pl is inclusive plural (I, you, ...)
+
++1SgO   !!= * @CODE@ objective conjugation
++2SgO   !!= * @CODE@
++3SgO   !!= * @CODE@
++SgO    !!= * @CODE@
++4SgO  !!= * @CODE@ obviative with objective conjugation
++1PlO   !!= * @CODE@
++P2lO   !!= * @CODE@
++3PlO   !!= * @CODE@
++PlO    !!= * @CODE@
++4PlO  !!= * @CODE@
+
++Inf    !!= * @CODE@ infinitive (infinite?)
++Pos    !!= * @CODE@ postitive
++Neg    !!= * @CODE@ negative
++ConNeg !!= * @CODE@ accompanying negative form
+
+!! Nominal MSP
++Sg		 !!= * @CODE@ singular
++Pl		 !!= * @CODE@ plural
+
++Px1Sg	 !!= * @CODE@ person prefixes for nouns
++Px2Sg	 !!= * @CODE@
++Px3Sg	 !!= * @CODE@
++Px4Sg	 !!= * @CODE@
++Px1Pl	 !!= * @CODE@ obviative
++Px12Pl	 !!= * @CODE@ inclusive
++Px2Pl	 !!= * @CODE@
++Px3Pl	 !!= * @CODE@
++Px4Pl	 !!= * @CODE@
++Dim/Der !!= * @CODE@
+
++IA      !!= * @CODE@ intransitive with animate subject, 
++II      !!= * @CODE@ intransitive with inanimate subject, 
++TA      !!= * @CODE@ transitive with animate object, and 
++TI      !!= * @CODE@ transitive with inanimate object.
+
++AN		 !!= * @CODE@ animate noun
++IN		 !!= * @CODE@ inanimate noun
+
+
++Incl    !!= * @CODE@ me too, etc.
++Qst     !!= * @CODE@ yes-no question particle ci
+
+!! !!Auxiliary symbols
+
+!! These symbols either shape or govern the
+!! morphophonological structure
+
+%> 		 !!= * @CODE@ suffix border
++WAK  	 !!= * @CODE@ tag to keep track of -wak plurals
+
+%^LOC    !!= * @CODE@  Locative
+w2      !!= * @CODE@ mow:mov2
+t2 		!!= * @CODE@  Prefix in possessives 
+h2 		!!= * @CODE@  Prefix in possessives 
+i2 		!!= * @CODE@  Possessive element 
+%^DIM	!!=* @CODE@  Diminutive suffix
+%^POS    !!=* @CODE@  Possessive suffix
++Obv	!!=* @CODE@  Label for nouns marked in the obviative, especially in 3-on-3 cases when it blocks potential plural marking
+
+^%EGLOT  !!= * @CODE@  glottal stop after e, for eh- in conjunctive mood
+^%EA    !!= * @CODE@  ê to â in 1, 2 person of ê-stems
+
+
+!! !!Usage tags
+
+!! These tags distinguish different special-purpose analysers
+!! and generators from each other. Thus, for examples, we have
+!! normative and descriptive analysers, and generators for different purposes.
+
++Err/Sub !!= * @CODE@ tag for substandard forms
++Use/NG  !!= * @CODE@ not-generate, for ped generation isme-ped.fst
+
+
+
+!! !! Flagdiacritics 
+
+!! These are documented in Chapter 8 of Beesley/Karttunen, p. 456 zB.
+
+!! For indicative, there are prefixes, so here we need one
+!! flag for each person-number combination. Note that
+!! for the inverse objective conjugation, the flag refers to
+!! the __prefix__, not to the subject. So ''indsg1'' refers to either
+!! subject = 1Sg or object = 1Sg. The 3-3 forms are prefixless.
+
+
+
+!! The conjunctive always has
+!! the ê- prefix, and future conditional never has a prefix.
+
+@U.verb.FutCon@ !!= * @CODE@ Future Conditional
+
+@U.mood.cnj@  !!= * @CODE@ Conjunctive (Conjunct)
+@U.verb.fut@  !!= * @CODE@ Future Conditional
+@U.verb.sbjPrt@ !!=*@CODE@ Past tense Conjunct mode
+@U.verb.sbjPrs@ !!=*@CODE@ Present tense Conjunct mode
+@U.verb.sbjFutureInt@ !!=*@CODE@ Future intentional tense Conjunct mode
+
+!! Prefixes with a certain phonological content:
+
+@U.perspref.NULL@ !!= * @CODE@  test
+@U.perspref.NI@ !!= * @CODE@  test
+@U.perspref.KI@ !!= * @CODE@  test
+
+! Test:
+@U.mood.imp@
+@U.mood.indep@
+@U.tense.Prs@
+@U.tense.Prt@  
+@U.tense.FutDef@
+@U.tense.FutInt@
+@U.tense.FutCon@
+@U.mood.indep@
+@U.mood.FutInt@
+@U.mood.FutCon@
+@D.mood@
+@D.tense@
+@R.mood.cnj@
+@D.mood.indep@
+@D.mood.cnj@
+@R.mood.indep@
+@P.mood.cnj@
+@P.mood.indep@
+
+@U.verb.1sgindep@ !!= * @CODE@
+@U.verb.2sgindep@ !!= * @CODE@
+@U.verb.3osgindep@ !!= * @CODE@
+@U.verb.1plindep@ !!= * @CODE@
+@U.verb.12plindep@ !!= * @CODE@
+@U.verb.2plindep@ !!= * @CODE@
+@U.verb.3plindep@ !!= * @CODE@
+
+@U.noun.1sg@ !!= * @CODE@
+@U.noun.2sg@ !!= * @CODE@
+@U.noun.3sg@ !!= * @CODE@
+@U.noun.3isg@ !!= * @CODE@
+@U.noun.3osg@ !!= * @CODE@
+@U.noun.1pl@ !!= * @CODE@
+@U.noun.12pl@ !!= * @CODE@
+@U.noun.2pl@ !!= * @CODE@
+@U.noun.3pl@ !!= * @CODE@
+@U.noun.3ipl@ !!= * @CODE@
+
+@U.noun.abs@  !!= * @CODE@
+@U.noun.dep@ !!= * @CODE@
+
+! Key lexicon
+
+LEXICON Root         !!=  @CODE@ is where it all starts
+
+NounPrefixes ;       !!= * @CODE@ 
+VerbPrefixes ;       !!= * @CODE@ 
+Pronoun ;            !!= * @CODE@ 
+Punctuation ;        !!= * @CODE@ 
+Particles ;          !!= * @CODE@ 
+Numerals ;           !!= * @CODE@ 
+

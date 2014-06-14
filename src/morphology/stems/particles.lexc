@@ -1,0 +1,19 @@
+
+! ========================================================================== !  
+!!                           !!!Innu (Montagnais) particles                      \
+                                                                                
+! ========================================================================== !  
+
+!! The file                                                                     
+
+LEXICON pcle !!= * @CODE@ adds +Ipc                                             
++Ipc: # ;
+
+
+LEXICON Particles !!= * @CODE@ \\                                               
+cî+Ipc+Qst:cî # ; !!= * @CODE@                                                  
+namoya+Ipc+Neg:namoya # ; !!= * @CODE@                                          
+sisone pcle "along" ; !                                                         
+
+
+

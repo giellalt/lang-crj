@@ -1,0 +1,341 @@
+! Divvun & Giellatekno - open source grammars for Sámi and other languages
+! Copyright © 2000-2010 The University of Tromsø & the Norwegian Sámi Parliament
+! http://giellatekno.uit.no & http://divvun.no
+!
+! This program is free software; you can redistribute and/or modify
+! this file under the terms of the GNU General Public License as published by
+! the Free Software Foundation, either version 3 of the License, or
+! (at your option) any later version. The GNU General Public License
+! is found at http://www.gnu.org/licenses/gpl.html. It is
+! also available in the file $GTHOME/LICENSE.txt.
+!
+! Other licensing options are available upon request, please contact
+! giellatekno@hum.uit.no or divvun@hum.uit.no
+
+Multichar_Symbols
+
+  +Use/NG    ! Do not generate, for isme-ped.fst and apertium
+  +String    ! Tag to denote non-numeric strings
+  +NumNum    ! Tag to denote real numbers in one form or another
+
+LEXICON Root
+
+!These 4 lines are for TTS, they are commented out.
+!< %+String [a|b|c|d|e|f|g|h|i|j|k|l|m|n|o|p|q|r|s|t|u|v|w|q|y|z|â|ê|î|ô|A|B|C|D|E|F|G|H|I|J|K|L|M|N|O|P|Q|R|S|T|U|V|W|X|Y|Z|Â|Ê|Î|Ô]* > ENDLEX ; ! This first line is to allow all letter strings.
+!+NumNum NUMBERSECTION ;
+!+NumNum ENDLEXSECTION ;
+!LEXICON NUMBERSECTION
+
+HUNDREDSM ;		! 200M
+mitâtahtomitanaw% :1 HUNDREDM ;	! 100M
+TENSM ;			! 20-99M
+TEENSM ;		! 10-19M
+ONESM ;			! 1-9M
+!HUNDREDST ;		! 200000-999999 NB
+mitâtahtomitanaw:1 HUNDREDT ;	! 100000-100999
+TENST ;			! 20000-99999,10000-10999
+TEENST ;		! 11000-19999
+ONEST ;			! 2000-9999
+tåvsene:1 THOUSAND ;	! 1000-1999
+UNDERTHOUSAND ;		! 100-999
+TENS ;			! 20-99
+TEENS ;			! 10-19
+ONES ;			! 1-9
+NEARLY ;			! 29-99
+
+LEXICON HUNDREDSM
+nîso:2  CUODIM ;
+nisto:3 CUODIM ;
+newo:4 CUODIM ; ! Google: 459
+nîyânan:5 CUODIM ;
+nikotwâsik:6 CUODIM ;
+tepakohp:7 CUODIM ;
+ayinânew:8 CUODIM ;
+kekâmitâtaht:9 CUODIM ;
+
+LEXICON CUODIM
+mitâtahtomitanaw: HUNDREDM ;
+
+LEXICON HUNDREDM
+      TENSM ;
+      TEENSM ;
+:%0   ONESM ;
+:%0%0 MILJON ;
+
+LEXICON TEENSM
+luhkie:1 TEENM ;
+
+LEXICON TEENM
+peyak:1     LOHKAIM ;
+nîso:2   LOHKAIM ;
+nisto:3    LOHKAIM ;
+newo:4 LOHKAIM ;
+nîyânan:5   LOHKAIM ;
+nikotwâsik:6   LOHKAIM ;
+tepakohp:7 LOHKAIM ;
+ayinânew:8 LOHKAIM ;
+kekâmitâtaht:9   LOHKAIM ;
+
+LEXICON LOHKAIM
+MILJON ;
+
+LEXICON TENSM
+luhkie:1%0 MILJON ;
+nîso:2   TENM ;
+nisto:3    TENM ;
+newo:4 TENM ;
+nîyânan:5   TENM ;
+nikotwâsik:6   TENM ;
+tepakohp:7 TENM ;
+ayinânew:8 TENM ;
+kekâmitâtaht:9   TENM ;
+
+LEXICON TENM
+luhkie:%0 MILJON ;
+luhkie:   ONESM ;
+
+LEXICON ONESM
+akte% miljon% :1 OVERTHOUSANDS ;
+nîso:2         MILJON ;
+nisto:3          MILJON ;
+newo:4       MILJON ;
+nîyânan:5         MILJON ;
+nikotwâsik:6         MILJON ;
+tepakohp:7       MILJON ;
+ayinânew:8       MILJON ;
+kekâmitâtaht:9         MILJON ; 
+
+LEXICON MILJON
+% miljona% : OVERTHOUSANDS ;
+
+! =================
+! Under the million
+! =================
+
+LEXICON OVERTHOUSANDS
+HUNDREDST ;		! x00.000.000
+mitâtahtomitanaw:1 HUNDREDT ;	! 100.000.000
+:%0 TENST ;		!  20.000.000
+:%0 TEENST ;		!  10.000.000
+:%0%0 ONEST ;		!   2.000.000
+tåvsene:%0%01 THOUSAND ;	!   1.000.000
+:%0%0%0 UNDERTHOUSAND ;	
+:%0%0%0%0 TENS ;
+:%0%0%0%0 TEENS ;
+:%0%0%0%0%0 ONES ;
+:%0%0%0%0%0%0 ENDLEX ;	!  x000000
+
+LEXICON HUNDREDST
+nîso:2   CUODIT ;	! 200000-299999
+nisto:3    CUODIT ;	! 300000-399999
+newo:4 CUODIT ;	! 400000-499999
+nîyânan:5   CUODIT ;	! 500000-599999
+nikotwâsik:6   CUODIT ;	! 600000-699999
+tepakohp:7 CUODIT ;	! 700000-799999
+ayinânew:8 CUODIT ;	! 800000-899999
+kekâmitâtaht:9   CUODIT ;	! 900000-999999
+
+LEXICON CUODIT
+mitâtahtomitanaw: HUNDREDT ;	! 100000-199999
+
+LEXICON HUNDREDT	! X = 1-9, Y = 0-9
+% : TENST ;			! X2XYYY, X10YYY
+TEENST ;		! X1XYYY
+akte:%01 THOUSANDS ;
+:%0 ONEST ;		! XX0YYY
+:%0%0 THOUSANDS ;	! X00YYY
+
+LEXICON TEENST
+luhkie:1   TEENT ;
+luhkie:1%0 THOUSANDS ;
+
+LEXICON TEENT
+peyak:1     LOHKAIT ;
+nîso:2   LOHKAIT ;
+nisto:3    LOHKAIT ;
+newo:4 LOHKAIT ;
+nîyânan:5   LOHKAIT ;
+nikotwâsik:6   LOHKAIT ;
+tepakohp:7 LOHKAIT ;
+ayinânew:8 LOHKAIT ;
+kekâmitâtaht:9   LOHKAIT ;
+
+LEXICON LOHKAIT
+THOUSANDS ;
+
+LEXICON TENST
+nîs:2   TANAW ;
+nistomi:3    TANAW ;
+nemi:4 TANAW ;
+nîyânanomi:5   TANAW ;
+nikotwâsomi:6   TANAW ;
+tepakohpimi:7 TANAW ;
+ayinânewomi:8 TANAW ;
+kekâmitâtahtomi:9   TANAW ;
+kâmitâtahtomi:9   TANAW ;
+
+LEXICON TANAW
+tanaw% :%0 ENDLEX ;
+tanaw% : ONESTONEXT ;
+
+LEXICON TENT
+:%0 THOUSANDS ;
+akte:1 THOUSANDS ;
+ONEST ;
+
+LEXICON ONEST
+nîso:2 THOUSANDS ;
+nisto:3 THOUSANDS ;
+newo:4 THOUSANDS ;
+nîyânan:5 THOUSANDS ;
+nikotwâsik:6 THOUSANDS ;
+tepakohp:7 THOUSANDS ;
+ayinânew:8 THOUSANDS ;
+kekâmitâtaht:9 THOUSANDS ;
+
+LEXICON THOUSANDS      ! x > 1
+tåvsene: THOUSAND ;
+
+LEXICON THOUSAND
+UNDERTHOUSAND ;	   ! 1100-1999
+:%0 TENS ;	   ! 1020-1099
+:%0 TEENS ;	   ! 1010-1019
+:%0%0 ONES ;	   ! 1001-1009
+:%0%0%0 ENDLEX ;	   ! 1000
+
+!===========================
+!Here starts the 999 numbers
+!===========================
+
+LEXICON UNDERTHOUSAND
+HUNDREDS ;
+mitâtahtomitanaw% :1 HUNDRED ;
+tjuatede:1  CUODAAT ;
+
+LEXICON HUNDREDS
+nîso:2   CUODI ;
+nisto:3    CUODI ;
+newo:4 CUODI ;
+nîyânano:5   CUODI ;  !OBS
+nikotwâsiko:6   CUODI ;
+tepakohpo:7 CUODI ;
+ayinânewo:8 CUODI ;
+kekâmitâtahto:9   CUODI ;
+
+LEXICON CUODI
+mitâtahtomitanaw% :   HUNDRED ;
+tjuatede:  CUODAAT ;
+
+LEXICON HUNDRED
+      TENS ;
+      TEENS ;
+:%0   ONES ;
+:%0%0 ENDLEX ;
+
+LEXICON CUODAAT
+:%0%0%.    ENDLEX ;
+
+LEXICON TENS
+mitâtaht:1%0 ENDLEX ;
+låhkede:1%0%. ENDLEX ;
+nîs:2 TEN ;
+nîsi:2 TEN ;
+nistomi:3 TEN ;
+nemi:4 TEN ;
+nîyânanomi:5 TEN ;
+nikotwâsomi:6 TEN ;
+tepakohpimi:7 TEN ;
+ayinânewomi:8 TEN ;
+kekâmitâtahtomi:9 TEN ;
+
+LEXICON TEN
+låhkede:%0%. ENDLEX ;
+tanaw% : ONESTONEXT ;
+tanaw% :%0 ENDLEX ;
+
+LEXICON NEARLY
+kekâc-nistomi:29 NEARLY-TEN ;
+kekâc-nemi:39 NEARLY-TEN ;
+kekâc-nîyânanomi:49 NEARLY-TEN ;
+kekâc-nikotwâsomi:59 NEARLY-TEN ;
+kekâc-tepakohpimi:69 NEARLY-TEN ;
+kekâc-ayinânewomi:79 NEARLY-TEN ;
+kekâc-ayenânewomi:79 NEARLY-TEN ;
+kekâc-kekâ-mitâtahtomi:89 NEARLY-TEN ;
+kekâ-mitatahtomi:90 NEARLY-TEN ;
+kekâ-mitatahtomitanaw% kekâ-mitâtaht:99 ENDLEX ;
+
+LEXICON NEARLY-TEN
+tanaw: ENDLEX ;
+
+
+
+LEXICON ONESTONEXT
+peyakosâp:1 ENDLEX ;
+nîsosâp:2 ENDLEX ;
+nistosâp:3 ENDLEX ;
+newosâp:4 ENDLEX ;
+niyânanosâp:5 ENDLEX ;
+nikotwâsosâp:6 ENDLEX ;
+tepakohposâp:7 ENDLEX ;
+ayinânewosâp:8 ENDLEX ;
+kekâmitâtahtosâp:9 ENDLEX ;
+ayiwâk% : CARDINAL ;
+
+
+LEXICON TEENS
+peyakosâp:11 ENDLEX ;
+nîsosâp:12 ENDLEX ;
+nistosâp:13 ENDLEX ;
+newosâp:14 ENDLEX ;
+niyânanosâp:15 ENDLEX ;
+nikotwâsosâp:16 ENDLEX ;
+tepakohposâp:17 ENDLEX ;
+ayinânewosâp:18 ENDLEX ;
+kekâmitâtahtosâp:19 ENDLEX ;
+
+LEXICON ONES
+CARDINAL ;
+ORDINAL ;
+
+LEXICON CARDINAL
+peyak:1 ENDLEX ;
+nîso:2 ENDLEX ;
+nisto:3 ENDLEX ;
+newo:4 ENDLEX ;
+niyânan:5 ENDLEX ;
+nikotwâsik:6 ENDLEX ;
+tepakohp:7 ENDLEX ;
+ayinânew:8 ENDLEX ;
+ayenânew:8 ENDLEX ;
+kekâmitâtaht:9 ENDLEX ;
+
+LEXICON ORDINAL
+voestes:1%.     ENDLEX ;
+mubpie:2%.   ENDLEX ;
+gåalmede:3%.   ENDLEX ;
+njealjede:4%. ENDLEX ;
+vïjhtede:5%.   ENDLEX ;
+govhtede:6%.   ENDLEX ;
+tjïjhtjede:7%.    ENDLEX ;
+gaaktsede:8%.   ENDLEX ;
+åktsede:9%.    ENDLEX ;
+
+!LEXICON ENDLEX
+! ENDLEX ;
+! ENDLEXSECTION ;
+!
+!LEXICON ENDLEXSECTION  ! these are not spellchecked!!!
+!                  ENDLEX ;
+!! % komma% :,      Root ;
+!! % tjuohkkis% :%. Root ;
+!! % kolon% :%:     Root ;
+!! % sárggis% :%-   Root ; 
+! % la% :%=         Root ; 
+! % gráda% :%°      Root ; 
+! % paragráfa% :§   Root ; 
+!! % násti% :%*     Root ; 
+! % ja% :&          Root ; 
+
+LEXICON ENDLEX
+ # ;

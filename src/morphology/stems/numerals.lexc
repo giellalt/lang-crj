@@ -1,0 +1,13 @@
+
+! ========================================================================== !
+!!                           !!!South East Cree numerals                           
+! ========================================================================== !
+
+!! !!The file for numerals
+
+LEXICON Numerals !!= * @CODE@
+kîkâmitâtaht NUM ;
+
+
+LEXICON NUM !!= * @CODE@ adds +Num+Ipc
++Num+Ipc: # ;

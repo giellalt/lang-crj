@@ -1,0 +1,28 @@
+! ========================================================================== !
+!!                           !!! South East Cree verb morphology                  
+! ========================================================================== !
+
+
+
+LEXICON VerbPrefixes 
+@U.mood.indep@ INDEPENDENT ;		 !!= * @CODE@
+
+!! Now, lexc directs us to the ../stems/verbs.lexc file,
+!! where we find all the verbal stems. The suffixes are then
+!! found in the section "Suffixes" right underneath.
+
+LEXICON INDEPENDENT !!= @CODE@ gives flags and prefixes for personprefix
+<         "@U.perspref.NULL@"       > IND_TENSE ; !
+
+
+LEXICON IND_TENSE !!= @CODE@ gives flags and prefixes for tense 
+<                   "@U.tense.Prs@"     > VERBLIST ; !
+
+
+! ===============================================================
+
+
+!! !!!Suffixes
+
+LEXICON IACONJ !!= @CODE@ splits in 4 moods
+< "+V":0 "+IA":0   "@U.perspref.NULL@" "@U.tense.Prs@" "@U.mood.indep@"   >     # ; !Baseform

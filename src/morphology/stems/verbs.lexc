@@ -1,0 +1,9 @@
+!! !!!Verb stems
+!! -------------
+
+
+LEXICON VERBLIST  !!= @CODE@ just adds the prefix boundary
+ :%> VERBSTEMS ;
+
+LEXICON VERBSTEMS !!= @CODE@ here come all the verbstems \\
+mâto IACONJ "cry" ; !!= @CODE@ GG

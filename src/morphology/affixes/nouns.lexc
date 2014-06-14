@@ -1,0 +1,36 @@
+! ========================================================================== !
+!!                           !!!South East Cree noun morphology                           
+! ========================================================================== !
+
+LEXICON NounPrefixes
+
+!! @LEXNAME@ redirects to AN-IN, BODY, INALIENABLE
+! and EXPER
+
+AN-IN       ; ! Animate and inanimate nouns
+
+LEXICON AN-IN
+!! @LEXNAME@ adds the prefixes ni-, ki-, o-. Redirects to STEMS
+           @U.noun.abs@            STEMS ; 
+
+
+
+           
+!! Now, lexc directs us to the ../stems/nouns.lexc file,
+!! where we find all the nominal stems. The suffixes are then
+!! found at the end of this file.
+
+! ===============================================================
+
+
+!! !!!Suffixes
+
+
+!! !!The declensions for Animates 
+
+LEXICON ANDECL !!= * @CODE@ for the animate declension
+ANABSDECL ;
+
+LEXICON ANABSDECL !!= * @CODE@ for the animate absolute declension
+< "+N":0 "+AN":0 "+Sg":0 "@U.noun.abs@" >  # ; !
+

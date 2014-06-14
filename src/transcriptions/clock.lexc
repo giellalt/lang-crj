@@ -1,0 +1,216 @@
+! Divvun & Giellatekno - open source grammars for Sámi and other languages
+! Copyright © 2000-2010 The University of Tromsø & the Norwegian Sámi Parliament
+! http://giellatekno.uit.no & http://divvun.no
+!
+! This program is free software; you can redistribute and/or modify
+! this file under the terms of the GNU General Public License as published by
+! the Free Software Foundation, either version 3 of the License, or
+! (at your option) any later version. The GNU General Public License
+! is found at http://www.gnu.org/licenses/gpl.html. It is
+! also available in the file $GTHOME/LICENSE.txt.
+!
+! Other licensing options are available upon request, please contact
+! giellatekno@hum.uit.no or divvun@hum.uit.no
+
+! ==================== !
+! The Plains Cree clock !
+! ==================== !
+
+! Note! This is NOT checked with native speakers nor
+! textbooks, just based upon guessing from a dictionary.
+
+Multichar_Symbols
+
+@U.TIME.1@ 
+@U.TIME.2@ 
+@U.TIME.3@ 
+@U.TIME.4@ 
+@U.TIME.5@ 
+@U.TIME.6@ 
+@U.TIME.7@ 
+@U.TIME.8@ 
+@U.TIME.9@ 
+@U.TIME.10@ 
+@U.TIME.11@ 
+@U.TIME.12@ 
+
++Use/NG
++Use/NA
+
+LEXICON Root
+
+! Allowing sloppy 2:30 in answer
+@U.TIME.1@:@U.TIME.1@1+Use/NA     AFTpunkt ;    !01:00 - 01:19
+@U.TIME.2@:@U.TIME.2@1+Use/NA     BEFpunkt ;    !01:20 - 01:59
+@U.TIME.2@:@U.TIME.2@2+Use/NA     AFTpunkt ;    !02:00 - 02:19
+@U.TIME.3@:@U.TIME.3@2+Use/NA     BEFpunkt ;    !02:20 - 02:59
+@U.TIME.3@:@U.TIME.3@3+Use/NA     AFTpunkt ;    !03:00 - 03:19
+@U.TIME.4@:@U.TIME.4@3+Use/NA     BEFpunkt ;    !03:20 - 03:59
+@U.TIME.4@:@U.TIME.4@4+Use/NA     AFTpunkt ;    !04:00 - 04:19
+@U.TIME.5@:@U.TIME.5@4+Use/NA     BEFpunkt ;    !04:20 - 04:59
+@U.TIME.5@:@U.TIME.5@5+Use/NA     AFTpunkt ;    !05:00 - 05:19
+@U.TIME.6@:@U.TIME.6@5+Use/NA     BEFpunkt ;    !05:20 - 05:59
+@U.TIME.6@:@U.TIME.6@6+Use/NA     AFTpunkt ;    !06:00 - 06:19
+@U.TIME.7@:@U.TIME.7@6+Use/NA     BEFpunkt ;    !06:20 - 06:59
+@U.TIME.7@:@U.TIME.7@7+Use/NA     AFTpunkt ;    !07:00 - 07:19
+@U.TIME.8@:@U.TIME.8@7+Use/NA     BEFpunkt ;    !07:20 - 07:59
+@U.TIME.8@:@U.TIME.8@8+Use/NA     AFTpunkt ;    !08:00 - 08:19
+@U.TIME.9@:@U.TIME.9@8+Use/NA     BEFpunkt ;    !08:20 - 08:59
+@U.TIME.9@:@U.TIME.9@9+Use/NA     AFTpunkt ;    !09:00 - 09:19
+@U.TIME.10@:@U.TIME.10@9+Use/NA   BEFpunkt ;    !09:20 - 09:59
+
+! Correct is 02:30
+@U.TIME.1@:@U.TIME.1@%01     AFTpunkt ;    !01:00 - 01:19
+@U.TIME.2@:@U.TIME.2@%01     BEFpunkt ;    !01:20 - 01:59
+@U.TIME.2@:@U.TIME.2@%02     AFTpunkt ;    !02:00 - 02:19
+@U.TIME.3@:@U.TIME.3@%02     BEFpunkt ;    !02:20 - 02:59
+@U.TIME.3@:@U.TIME.3@%03     AFTpunkt ;    !03:00 - 03:19
+@U.TIME.4@:@U.TIME.4@%03    BEFpunkt ;    !03:20 - 03:59
+@U.TIME.4@:@U.TIME.4@%04    AFTpunkt ;    !04:00 - 04:19
+@U.TIME.5@:@U.TIME.5@%04     BEFpunkt ;    !04:20 - 04:59
+@U.TIME.5@:@U.TIME.5@%05    AFTpunkt ;    !05:00 - 05:19
+@U.TIME.6@:@U.TIME.6@%05     BEFpunkt ;    !05:20 - 05:59
+@U.TIME.6@:@U.TIME.6@%06    AFTpunkt ;    !06:00 - 06:19
+@U.TIME.7@:@U.TIME.7@%06     BEFpunkt ;    !06:20 - 06:59
+@U.TIME.7@:@U.TIME.7@%07     AFTpunkt ;    !07:00 - 07:19
+@U.TIME.8@:@U.TIME.8@%07    BEFpunkt ;    !07:20 - 07:59
+@U.TIME.8@:@U.TIME.8@%08     AFTpunkt ;    !08:00 - 08:19
+@U.TIME.9@:@U.TIME.9@%08    BEFpunkt ;    !08:20 - 08:59
+@U.TIME.9@:@U.TIME.9@%09     AFTpunkt ;    !09:00 - 09:19
+@U.TIME.10@:@U.TIME.10@%09   BEFpunkt ;    !09:20 - 09:59
+
+@U.TIME.10@:@U.TIME.10@1%0   AFTpunkt ;     !10:00 - 10:19
+@U.TIME.11@:@U.TIME.11@1%0   BEFpunkt ;     !10:20 - 10:59
+@U.TIME.11@:@U.TIME.11@11    AFTpunkt ;     !11:00 - 11:59
+@U.TIME.12@:@U.TIME.12@11    BEFpunkt ;     !11:19 - 11:59
+@U.TIME.12@:@U.TIME.12@12    BEFpunkt ;     !11:19 - 11:59
+@U.TIME.12@:@U.TIME.12@%0%0    BEFpunkt ;     !11:19 - 11:59
+nîsosâp:12%:%0%0        TIPAHIKAN        ;     !12:00
+nîsosâp:12%.%0%0+Use/NA        TIPAHIKAN        ;     !12.00
+nîsosâp:12+Use/NA       TIPAHIKAN        ;     !12.00
+âpihtâkîsikâw:12%:%0%0+Use/NA        NOON        ;     !12:00
+âpihtâkîsikâw:12%.%0%0+Use/NA        NOON        ;     !12.00
+âpihtâkîsikâw:12+Use/NA       NOON        ;     !12.00
+âpihtâtipiskâw:12%:%0%0+Use/NA        NOON        ;     !12:00
+âpihtâtipiskâw:12%.%0%0+Use/NA        NOON        ;     !12.00
+âpihtâtipiskâw:12+Use/NA       NOON        ;     !12.00
+
+
+
+LEXICON BEFpunkt
+ :%:+Use/NA BEF ;
+ :%.+Use/NA BEF ;
+
+LEXICON AFTpunkt
+ :%:+Use/NA AFT ;  ! 2:00 = göökte
+ :%.+Use/NA AFT ;  ! 2.00 = göökte
+ :+Use/NA  HOUR ;  ! 2    = göökte
+
+LEXICON BEF
+ :3%0                      HALFHOUR ;
+ nîstanaw% kekâmitâtahtosâp% :31  TO ;
+ nîstanaw% ayinânewosâp% :32  TO ;
+ nîstanaw% tepakohposâp% :33  TO ;
+ nîstanaw% nikotwâsosâp% :34  TO ;
+ nîstanaw% nîyânanosâp% :35  TO ;
+ nîstanaw% newosâp% :36  TO ;
+ nîstanaw% nistosâp% :37  TO ;
+ nîstanaw% nîsosâp% :38  TO ; 
+ nîstanaw% peyakosâp% :39  TO ;
+ nîstanaw% :4%0  TO ;
+ kîkâmitâtahtosâp% :41          TO ;
+ ayinânewosâp% :42        TO ;
+ tepakohposâp% :43        TO ;
+ nikotwâsiksâp% :44          TO ;
+ niyânanosâp% :45            TO ;
+ newosâposâp% :46        TO ;
+ nistosâp% :47           TO ;
+ nîsosâp% :48          TO ;
+ peyakosâp% :49            TO ;
+ mitâtaht% :5%0               TO ;
+ kîkâmitâtaht% :51                TO ;
+ ayinânew% :52              TO ;
+ tepakohp% :53              TO ;
+ nikotwâsik% :54                TO ;
+ niyânan% :55                TO ;  
+ newo% :56              TO ;  
+ nisto% :57                 TO ;
+ nîso% :58                TO ; 
+ peyak% :59                  TO ;
+
+LEXICON AFT
+ :%0%0                     HOUR ;
+ peyak% :%01                 OVER ;
+ nîso% :%02               OVER ;
+ nisto% :%03                OVER ;
+ newo% :%04             OVER ;
+ nîyânan% :%05               OVER ;
+ nikotwâsik% :%06               OVER ;
+ tepakohp% :%07             OVER ;
+ ayinânew% :%08             OVER ;
+ kekâmitâtaht% :%09               OVER ;
+ mitâtaht% :1%0               OVER ;
+ peyakosâp% :11            OVER ;
+ nîsosâp% :12          OVER ;
+ nistosâp% :13           OVER ;
+ newosâposâp% :14        OVER ;
+ niyânanosâp% :15            OVER ; 
+ nikotwâsiksâp% :16          OVER ;
+ tepakohposâp% :17        OVER ;
+ ayinânewosâp% :18        OVER ;
+ kîkâmitâtahtosâp% :19          OVER ;
+ nîstanaw% :2%0               OVER ;
+ nîstanaw% peyakosâp% :21                OVER ;
+ nîstanaw% nîsosâp% :22              OVER ;
+ nîstanaw% nistosâp% :23             OVER ;
+ nîstanaw% newosâp% :24                OVER ;
+ nîstanaw% nîyânanosâp% :25                OVER ;  
+ nîstanaw% nikotwâosâp% :26              OVER ;  
+ nîstanaw% tepakohposâp% :27                 OVER ;
+ nîstanaw% ayinânewosâp% :28                OVER ; 
+ nîstanaw% kekâmitâtahtosâp% :29                  OVER ;
+
+LEXICON TO
+ cipahikanis% pâmayes% :          HOUR ;
+
+LEXICON OVER
+ cipahikanis% mîyâskam% :                HOUR ;
+
+LEXICON HALFHOUR
+nîsosâp@U.TIME.1@:@U.TIME.1@          HALF ;           
+peyak@U.TIME.2@:@U.TIME.2@         HALF ;         
+nîso@U.TIME.3@:@U.TIME.3@          HALF ;          
+nisto@U.TIME.4@:@U.TIME.4@       HALF ;       
+newo@U.TIME.5@:@U.TIME.5@         HALF ;         
+nîyânan@U.TIME.6@:@U.TIME.6@         HALF ;         
+nikotwâsik@U.TIME.7@:@U.TIME.7@       HALF ;       
+tepakohp@U.TIME.8@:@U.TIME.8@       HALF ;       
+ayinânew@U.TIME.9@:@U.TIME.9@         HALF ;         
+kekâmitâtaht@U.TIME.10@:@U.TIME.10@       HALF ;       
+mitâtaht@U.TIME.11@:@U.TIME.11@   HALF ;   
+peyakosâp@U.TIME.12@:@U.TIME.12@     HALF ; 
+
+LEXICON HALF
+ % mînâpihtaw: # ; !Not obligatory to add tipahikan
+ % mînâpihtaw: TIPAHIKAN ; 
+
+
+LEXICON HOUR
+peyak@U.TIME.1@:@U.TIME.1@          TIPAHIKAN ;           
+nîso@U.TIME.2@:@U.TIME.2@         TIPAHIKAN ;         
+nisto@U.TIME.3@:@U.TIME.3@          TIPAHIKAN ;          
+newo@U.TIME.4@:@U.TIME.4@       TIPAHIKAN ;       
+nîyânan@U.TIME.5@:@U.TIME.5@         TIPAHIKAN ;         
+nikotwâsik@U.TIME.6@:@U.TIME.6@         TIPAHIKAN ;         
+tepakohp@U.TIME.7@:@U.TIME.7@       TIPAHIKAN ;       
+ayinânew@U.TIME.8@:@U.TIME.8@       TIPAHIKAN ;       
+kekâmitâtaht@U.TIME.9@:@U.TIME.9@         TIPAHIKAN ;         
+mitâtaht@U.TIME.10@:@U.TIME.10@       TIPAHIKAN ;       
+peyakosâp@U.TIME.11@:@U.TIME.11@   TIPAHIKAN ;   
+nîsosâp@U.TIME.12@:@U.TIME.12@     TIPAHIKAN ; 
+
+LEXICON TIPAHIKAN
+ % tipahikan: # ;
+
+LEXICON NOON
+ : # ;
