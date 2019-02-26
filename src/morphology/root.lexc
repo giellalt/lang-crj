@@ -264,8 +264,9 @@ LEXICON Root         !!=  @CODE@ is where it all starts
 
 NounPrefixes ;       !!= * @CODE@ 
 VerbPrefixes ;       !!= * @CODE@ 
-Pronoun ;            !!= * @CODE@ 
-Punctuation ;        !!= * @CODE@ 
-Particles ;          !!= * @CODE@ 
+Pronoun ;            !!= * @CODE@
+Punctuation ;        !!= * @CODE@
+Symbols     ;        !!= * @CODE@
+Particles ;          !!= * @CODE@
 Numerals ;           !!= * @CODE@ 
 
