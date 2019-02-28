@@ -39,6 +39,7 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 +Interj     !!= * @CODE@ 
 +Pron       !!= * @CODE@ 
 +Num        !!= * @CODE@ 
++Symbol !!≈ * @CODE@ = independent symbols in the text stream, like £, €, ©
 
 +Loc        !!= * @CODE@ Locative
 
