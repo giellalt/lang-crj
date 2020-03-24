@@ -35,6 +35,7 @@ POS
  * +Interj      
  * +Pron        
  * +Num         
+ * +Symbol = independent symbols in the text stream, like £, €, ©
 
  * +Loc         Locative
 
@@ -234,8 +235,9 @@ Prefixes with a certain phonological content:
 
  * NounPrefixes ;        
  * VerbPrefixes ;        
- * Pronoun ;             
- * Punctuation ;         
- * Particles ;           
+ * Pronoun ;            
+ * Punctuation ;        
+ * Symbols     ;        
+ * Particles ;          
  * Numerals ;            
 
