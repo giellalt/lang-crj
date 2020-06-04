@@ -1,0 +1,9 @@
+name = "Southern East Cree"
+version = "@SPELLERVERSION@"
+
+[macos]
+system_pkg_id = "no.divvun.MacDivvun.crj"
+
+[windows]
+system_product_code = "DAEE3C9F-BFD4-4CE7-885B-155AD05D8367"
+msoffice_product_code = "5C762710-6594-4753-9140-42A57F54E8D8"
