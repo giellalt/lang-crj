@@ -1,9 +1,9 @@
 
 ! ========================================================================== !
-!!                           !!!South East Cree numerals                           
+!! # South East Cree numerals                           
 ! ========================================================================== !
 
-!! !!The file for numerals
+!! ## The file for numerals
 
 LEXICON Numerals !!= * @CODE@
 kîkâmitâtaht NUM ;

@@ -1,5 +1,5 @@
 ! ========================================================================== !
-!!                           !!! South East Cree verb morphology                  
+!! South East Cree verb morphology                  
 ! ========================================================================== !
 
 
@@ -22,7 +22,7 @@ LEXICON IND_TENSE !!= @CODE@ gives flags and prefixes for tense
 ! ===============================================================
 
 
-!! !!!Suffixes
+!! # Suffixes
 
 LEXICON IACONJ !!= @CODE@ splits in 4 moods
 < "+V":0 "+IA":0   "@U.perspref.NULL@" "@U.tense.Prs@" "@U.mood.indep@"   >     # ; !Baseform

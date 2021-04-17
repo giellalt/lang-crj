@@ -1,5 +1,5 @@
 ! ========================================================================== !
-!!                           !!!South East Cree noun morphology                           
+!! # South East Cree noun morphology                           
 ! ========================================================================== !
 
 LEXICON NounPrefixes
@@ -23,10 +23,10 @@ LEXICON AN-IN
 ! ===============================================================
 
 
-!! !!!Suffixes
+!! # Suffixes
 
 
-!! !!The declensions for Animates 
+!! ## The declensions for Animates 
 
 LEXICON ANDECL !!= * @CODE@ for the animate declension
 ANABSDECL ;
