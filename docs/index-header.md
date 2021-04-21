@@ -1,7 +1,7 @@
 # Southern East Cree documentation
 
 [![Maturity: Experiment](https://img.shields.io/badge/Maturity-Experiment-black.svg)](https://giellalt.github.io/MaturityClassification.html)
-[![License](https://img.shields.io/github/license/giellalt/template-lang-crj)](https://raw.githubusercontent.com/giellalt/lang-crj/develop/LICENSE)
+[![License](https://img.shields.io/github/license/giellalt/lang-crj)](https://raw.githubusercontent.com/giellalt/lang-crj/develop/LICENSE)
 [![Issues](https://img.shields.io/github/issues/giellalt/lang-crj)](https://github.com/giellalt/lang-crj/issues)
 [![Build status](https://github.com/giellalt/lang-crj/workflows/Speller%20CI+CD/badge.svg)](https://github.com/giellalt/lang-crj/actions)
 
