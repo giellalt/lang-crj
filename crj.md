@@ -1,3 +1,80 @@
+# South East Cree noun morphology                           
+
+
+NounPrefixes redirects to AN-IN, BODY, INALIENABLE
+
+
+AN-IN adds the prefixes ni-, ki-, o-. Redirects to STEMS
+
+
+
+
+Now, lexc directs us to the ../stems/nouns.lexc file,
+where we find all the nominal stems. The suffixes are then
+found at the end of this file.
+
+
+
+# Suffixes
+
+
+## The declensions for Animates 
+
+ * LEXICON ANDECL  for the animate declension
+
+ * LEXICON ANABSDECL  for the animate absolute declension
+
+
+# Symbol affixes
+
+
+
+
+
+South East Cree verb morphology                  
+
+
+
+ * @U.mood.indep@ INDEPENDENT ;		 
+
+Now, lexc directs us to the ../stems/verbs.lexc file,
+where we find all the verbal stems. The suffixes are then
+found in the section "Suffixes" right underneath.
+
+ LEXICON INDEPENDENT  gives flags and prefixes for personprefix
+
+
+ LEXICON IND_TENSE  gives flags and prefixes for tense 
+
+
+
+
+# Suffixes
+
+ LEXICON IACONJ  splits in 4 moods
+=================================== !
+The Southern East Cree morphophonological/twolc rules file !
+=================================== !
+
+
+
+
+
+
+
+
+* *primus%>s*
+* *primus00*
+
+
+* examples:*
+
+* examples:*
+
+
+* examples:*
+
+* examples:*
 
 # Southern East Cree morphological analyser
 INTRODUCTION TO MORPHOLOGICAL ANALYSER OF Southern East Cree LANGUAGE.
@@ -229,6 +306,105 @@ Prefixes with a certain phonological content:
  * Symbols     ;        
  * Particles ;          
  * Numerals ;            
+
+# South East Cree noun stems                           
+
+
+STEMS adds an affixmark and redirects to STEMLIST
+
+
+# Innu (Montagnais) particles                      \
+
+
+The file                                                                     
+
+ * LEXICON pcle  adds +Ipc                                             
+
+
+ * LEXICON Particles  \\                                               
+ * cî+Ipc+Qst:cî # ;                                                   
+ * namoya+Ipc+Neg:namoya # ;                                           
+
+
+
+## South Eastern Cree pronouns
+
+There are more pronoums to be added here.
+
+ LEXICON Pronoun 
+
+
+ LEXICON Personal  \\
+ niya+Pron+Pers+1Sg:niya # ; 
+# Verb stems
+
+
+ LEXICON VERBLIST   just adds the prefix boundary
+
+ LEXICON VERBSTEMS  here come all the verbstems \\
+ mâto IACONJ "cry" ;  GG
+
+# South East Cree numerals                           
+
+## The file for numerals
+
+ * LEXICON Numerals 
+
+
+ * LEXICON NUM  adds +Num+Ipc
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+% komma% :,      Root ;
+% tjuohkkis% :%. Root ;
+% kolon% :%:     Root ;
+% sárggis% :%-   Root ; 
+% násti% :%*     Root ; 
 
 
 
