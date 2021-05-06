@@ -1,3 +1,78 @@
+# South East Cree noun stems                           
+
+
+STEMS adds an affixmark and redirects to STEMLIST
+
+
+# South East Cree numerals                           
+
+## The file for numerals
+
+ * LEXICON Numerals 
+
+
+ * LEXICON NUM  adds +Num+Ipc
+# Verb stems
+
+
+ LEXICON VERBLIST   just adds the prefix boundary
+
+ LEXICON VERBSTEMS  here come all the verbstems \\
+ mâto IACONJ "cry" ;  GG
+## South Eastern Cree pronouns
+
+There are more pronoums to be added here.
+
+ LEXICON Pronoun 
+
+
+ LEXICON Personal  \\
+ niya+Pron+Pers+1Sg:niya # ; 
+
+# Innu (Montagnais) particles                      \
+
+
+The file                                                                     
+
+ * LEXICON pcle  adds +Ipc                                             
+
+
+ * LEXICON Particles  \\                                               
+ * cî+Ipc+Qst:cî # ;                                                   
+ * namoya+Ipc+Neg:namoya # ;                                           
+
+
+
+=================================== !
+The Southern East Cree morphophonological/twolc rules file !
+=================================== !
+
+
+
+
+
+
+
+
+* *primus%>s*
+* *primus00*
+
+
+* examples:*
+
+* examples:*
+
+
+* examples:*
+
+* examples:*
+
+# Symbol affixes
+
+
+
+
+
 # South East Cree noun morphology                           
 
 
@@ -24,13 +99,6 @@ found at the end of this file.
 
  * LEXICON ANABSDECL  for the animate absolute declension
 
-
-# Symbol affixes
-
-
-
-
-
 South East Cree verb morphology                  
 
 
@@ -52,29 +120,6 @@ found in the section "Suffixes" right underneath.
 # Suffixes
 
  LEXICON IACONJ  splits in 4 moods
-=================================== !
-The Southern East Cree morphophonological/twolc rules file !
-=================================== !
-
-
-
-
-
-
-
-
-* *primus%>s*
-* *primus00*
-
-
-* examples:*
-
-* examples:*
-
-
-* examples:*
-
-* examples:*
 
 # Southern East Cree morphological analyser
 INTRODUCTION TO MORPHOLOGICAL ANALYSER OF Southern East Cree LANGUAGE.
@@ -307,51 +352,22 @@ Prefixes with a certain phonological content:
  * Particles ;          
  * Numerals ;            
 
-# South East Cree noun stems                           
-
-
-STEMS adds an affixmark and redirects to STEMLIST
-
-
-# Innu (Montagnais) particles                      \
-
-
-The file                                                                     
-
- * LEXICON pcle  adds +Ipc                                             
-
-
- * LEXICON Particles  \\                                               
- * cî+Ipc+Qst:cî # ;                                                   
- * namoya+Ipc+Neg:namoya # ;                                           
 
 
 
-## South Eastern Cree pronouns
+We describe here how abbreviations are in Southern East Cree are read out, e.g.
+for text-to-speech systems.
 
-There are more pronoums to be added here.
+For example:
 
- LEXICON Pronoun 
-
-
- LEXICON Personal  \\
- niya+Pron+Pers+1Sg:niya # ; 
-# Verb stems
-
-
- LEXICON VERBLIST   just adds the prefix boundary
-
- LEXICON VERBSTEMS  here come all the verbstems \\
- mâto IACONJ "cry" ;  GG
-
-# South East Cree numerals                           
-
-## The file for numerals
-
- * LEXICON Numerals 
+ * s.:syntynyt # ;  
+ * os.:omaa% sukua # ;  
+ * v.:vuosi # ;  
+ * v.:vuonna # ;  
+ * esim.:esimerkki # ; 
+ * esim.:esimerkiksi # ; 
 
 
- * LEXICON NUM  adds +Num+Ipc
 
 
 
@@ -405,20 +421,4 @@ There are more pronoums to be added here.
 % kolon% :%:     Root ;
 % sárggis% :%-   Root ; 
 % násti% :%*     Root ; 
-
-
-
-
-We describe here how abbreviations are in Southern East Cree are read out, e.g.
-for text-to-speech systems.
-
-For example:
-
- * s.:syntynyt # ;  
- * os.:omaa% sukua # ;  
- * v.:vuosi # ;  
- * v.:vuonna # ;  
- * esim.:esimerkki # ; 
- * esim.:esimerkiksi # ; 
-
 
