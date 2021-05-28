@@ -605,81 +605,27 @@ These were the set types.
 
 
 
-# South East Cree noun stems                           
-
-
-STEMS adds an affixmark and redirects to STEMLIST
-
-
-# South East Cree numerals                           
-
-## The file for numerals
-
- * LEXICON Numerals 
-
-
- * LEXICON NUM  adds +Num+Ipc
-# Verb stems
-
-
- LEXICON VERBLIST   just adds the prefix boundary
-
- LEXICON VERBSTEMS  here come all the verbstems \\
- mâto IACONJ "cry" ;  GG
-## South Eastern Cree pronouns
-
-There are more pronoums to be added here.
-
- LEXICON Pronoun 
-
-
- LEXICON Personal  \\
- niya+Pron+Pers+1Sg:niya # ; 
-
-# Innu (Montagnais) particles                      \
-
-
-The file                                                                     
-
- * LEXICON pcle  adds +Ipc                                             
-
-
- * LEXICON Particles  \\                                               
- * cî+Ipc+Qst:cî # ;                                                   
- * namoya+Ipc+Neg:namoya # ;                                           
+South East Cree verb morphology                  
 
 
 
-=================================== !
-The Southern East Cree morphophonological/twolc rules file !
-=================================== !
+ * @U.mood.indep@ INDEPENDENT ;		 
+
+Now, lexc directs us to the ../stems/verbs.lexc file,
+where we find all the verbal stems. The suffixes are then
+found in the section "Suffixes" right underneath.
+
+ LEXICON INDEPENDENT  gives flags and prefixes for personprefix
+
+
+ LEXICON IND_TENSE  gives flags and prefixes for tense 
 
 
 
 
+# Suffixes
 
-
-
-
-* *primus%>s*
-* *primus00*
-
-
-* examples:*
-
-* examples:*
-
-
-* examples:*
-
-* examples:*
-
-# Symbol affixes
-
-
-
-
-
+ LEXICON IACONJ  splits in 4 moods
 # South East Cree noun morphology                           
 
 
@@ -706,27 +652,81 @@ found at the end of this file.
 
  * LEXICON ANABSDECL  for the animate absolute declension
 
-South East Cree verb morphology                  
 
-
-
- * @U.mood.indep@ INDEPENDENT ;		 
-
-Now, lexc directs us to the ../stems/verbs.lexc file,
-where we find all the verbal stems. The suffixes are then
-found in the section "Suffixes" right underneath.
-
- LEXICON INDEPENDENT  gives flags and prefixes for personprefix
-
-
- LEXICON IND_TENSE  gives flags and prefixes for tense 
+# Symbol affixes
 
 
 
 
-# Suffixes
 
- LEXICON IACONJ  splits in 4 moods
+=================================== !
+The Southern East Cree morphophonological/twolc rules file !
+=================================== !
+
+
+
+
+
+
+
+
+* *primus%>s*
+* *primus00*
+
+
+* examples:*
+
+* examples:*
+
+
+* examples:*
+
+* examples:*
+# Verb stems
+
+
+ LEXICON VERBLIST   just adds the prefix boundary
+
+ LEXICON VERBSTEMS  here come all the verbstems \\
+ mâto IACONJ "cry" ;  GG
+## South Eastern Cree pronouns
+
+There are more pronoums to be added here.
+
+ LEXICON Pronoun 
+
+
+ LEXICON Personal  \\
+ niya+Pron+Pers+1Sg:niya # ; 
+
+# South East Cree numerals                           
+
+## The file for numerals
+
+ * LEXICON Numerals 
+
+
+ * LEXICON NUM  adds +Num+Ipc
+# South East Cree noun stems                           
+
+
+STEMS adds an affixmark and redirects to STEMLIST
+
+
+# Innu (Montagnais) particles                      \
+
+
+The file                                                                     
+
+ * LEXICON pcle  adds +Ipc                                             
+
+
+ * LEXICON Particles  \\                                               
+ * cî+Ipc+Qst:cî # ;                                                   
+ * namoya+Ipc+Neg:namoya # ;                                           
+
+
+
 
 # Southern East Cree morphological analyser
 INTRODUCTION TO MORPHOLOGICAL ANALYSER OF Southern East Cree LANGUAGE.
@@ -962,22 +962,6 @@ Prefixes with a certain phonological content:
 
 
 
-We describe here how abbreviations are in Southern East Cree are read out, e.g.
-for text-to-speech systems.
-
-For example:
-
- * s.:syntynyt # ;  
- * os.:omaa% sukua # ;  
- * v.:vuosi # ;  
- * v.:vuonna # ;  
- * esim.:esimerkki # ; 
- * esim.:esimerkiksi # ; 
-
-
-
-
-
 
 
 
@@ -1028,6 +1012,22 @@ For example:
 % kolon% :%:     Root ;
 % sárggis% :%-   Root ; 
 % násti% :%*     Root ; 
+
+
+
+
+We describe here how abbreviations are in Southern East Cree are read out, e.g.
+for text-to-speech systems.
+
+For example:
+
+ * s.:syntynyt # ;  
+ * os.:omaa% sukua # ;  
+ * v.:vuosi # ;  
+ * v.:vuonna # ;  
+ * esim.:esimerkki # ; 
+ * esim.:esimerkiksi # ; 
+
 
 
       [ L A N G U A G E ]  G R A M M A R   C H E C K E R
