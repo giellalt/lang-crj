@@ -19,3 +19,5 @@ found in the section "Suffixes" right underneath.
 # Suffixes
 
  LEXICON IACONJ  splits in 4 moods
+* * *
+<small>This (part of) documentation was generated from [../src/fst/affixes/verbs.lexc](http://github.com/giellalt/lang-crj/blob/main/../src/fst/affixes/verbs.lexc)</small>

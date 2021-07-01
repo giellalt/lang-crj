@@ -199,7 +199,7 @@
 * Sets for verbs
 
 
-    - V is all readings with a V tag in them, REAL-V should
+- V is all readings with a V tag in them, REAL-V should
 be the ones without an N tag following the V.  
 The REAL-V set thus awaits a fix to the preprocess V ... N bug.
 
@@ -605,129 +605,8 @@ These were the set types.
 
 
 
-South East Cree verb morphology                  
-
-
-
- * @U.mood.indep@ INDEPENDENT ;		 
-
-Now, lexc directs us to the ../stems/verbs.lexc file,
-where we find all the verbal stems. The suffixes are then
-found in the section "Suffixes" right underneath.
-
- LEXICON INDEPENDENT  gives flags and prefixes for personprefix
-
-
- LEXICON IND_TENSE  gives flags and prefixes for tense 
-
-
-
-
-# Suffixes
-
- LEXICON IACONJ  splits in 4 moods
-# South East Cree noun morphology                           
-
-
-NounPrefixes redirects to AN-IN, BODY, INALIENABLE
-
-
-AN-IN adds the prefixes ni-, ki-, o-. Redirects to STEMS
-
-
-
-
-Now, lexc directs us to the ../stems/nouns.lexc file,
-where we find all the nominal stems. The suffixes are then
-found at the end of this file.
-
-
-
-# Suffixes
-
-
-## The declensions for Animates 
-
- * LEXICON ANDECL  for the animate declension
-
- * LEXICON ANABSDECL  for the animate absolute declension
-
-
-# Symbol affixes
-
-
-
-
-
-=================================== !
-The Southern East Cree morphophonological/twolc rules file !
-=================================== !
-
-
-
-
-
-
-
-
-* *primus%>s*
-* *primus00*
-
-
-* examples:*
-
-* examples:*
-
-
-* examples:*
-
-* examples:*
-# Verb stems
-
-
- LEXICON VERBLIST   just adds the prefix boundary
-
- LEXICON VERBSTEMS  here come all the verbstems \\
- mâto IACONJ "cry" ;  GG
-## South Eastern Cree pronouns
-
-There are more pronoums to be added here.
-
- LEXICON Pronoun 
-
-
- LEXICON Personal  \\
- niya+Pron+Pers+1Sg:niya # ; 
-
-# South East Cree numerals                           
-
-## The file for numerals
-
- * LEXICON Numerals 
-
-
- * LEXICON NUM  adds +Num+Ipc
-# South East Cree noun stems                           
-
-
-STEMS adds an affixmark and redirects to STEMLIST
-
-
-# Innu (Montagnais) particles                      \
-
-
-The file                                                                     
-
- * LEXICON pcle  adds +Ipc                                             
-
-
- * LEXICON Particles  \\                                               
- * cî+Ipc+Qst:cî # ;                                                   
- * namoya+Ipc+Neg:namoya # ;                                           
-
-
-
-
+* * *
+<small>This (part of) documentation was generated from [../src/cg3/functions.cg3](http://github.com/giellalt/lang-crj/blob/main/../src/cg3/functions.cg3)</small>
 # Southern East Cree morphological analyser
 INTRODUCTION TO MORPHOLOGICAL ANALYSER OF Southern East Cree LANGUAGE.
 
@@ -959,7 +838,139 @@ Prefixes with a certain phonological content:
  * Particles ;          
  * Numerals ;            
 
+* * *
+<small>This (part of) documentation was generated from [../src/fst/root.lexc](http://github.com/giellalt/lang-crj/blob/main/../src/fst/root.lexc)</small># South East Cree noun morphology                           
 
+
+NounPrefixes redirects to AN-IN, BODY, INALIENABLE
+
+
+AN-IN adds the prefixes ni-, ki-, o-. Redirects to STEMS
+
+
+
+
+Now, lexc directs us to the ../stems/nouns.lexc file,
+where we find all the nominal stems. The suffixes are then
+found at the end of this file.
+
+
+
+# Suffixes
+
+
+## The declensions for Animates 
+
+ * LEXICON ANDECL  for the animate declension
+
+ * LEXICON ANABSDECL  for the animate absolute declension
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/affixes/nouns.lexc](http://github.com/giellalt/lang-crj/blob/main/../src/fst/affixes/nouns.lexc)</small>
+# Symbol affixes
+
+
+
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/affixes/symbols.lexc](http://github.com/giellalt/lang-crj/blob/main/../src/fst/affixes/symbols.lexc)</small>South East Cree verb morphology                  
+
+
+
+ * @U.mood.indep@ INDEPENDENT ;		 
+
+Now, lexc directs us to the ../stems/verbs.lexc file,
+where we find all the verbal stems. The suffixes are then
+found in the section "Suffixes" right underneath.
+
+ LEXICON INDEPENDENT  gives flags and prefixes for personprefix
+
+
+ LEXICON IND_TENSE  gives flags and prefixes for tense 
+
+
+
+
+# Suffixes
+
+ LEXICON IACONJ  splits in 4 moods
+* * *
+<small>This (part of) documentation was generated from [../src/fst/affixes/verbs.lexc](http://github.com/giellalt/lang-crj/blob/main/../src/fst/affixes/verbs.lexc)</small>
+# Innu (Montagnais) particles                      \
+
+
+The file                                                                     
+
+ * LEXICON pcle  adds +Ipc                                             
+
+
+ * LEXICON Particles  \\                                               
+ * cî+Ipc+Qst:cî # ;                                                   
+ * namoya+Ipc+Neg:namoya # ;                                           
+
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/particles.lexc](http://github.com/giellalt/lang-crj/blob/main/../src/fst/stems/particles.lexc)</small>## South Eastern Cree pronouns
+
+There are more pronoums to be added here.
+
+ LEXICON Pronoun 
+
+
+ LEXICON Personal  \\
+ niya+Pron+Pers+1Sg:niya # ; 
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/pronouns.lexc](http://github.com/giellalt/lang-crj/blob/main/../src/fst/stems/pronouns.lexc)</small># South East Cree noun stems                           
+
+
+STEMS adds an affixmark and redirects to STEMLIST
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/nouns.lexc](http://github.com/giellalt/lang-crj/blob/main/../src/fst/stems/nouns.lexc)</small># Verb stems
+
+
+ LEXICON VERBLIST   just adds the prefix boundary
+
+ LEXICON VERBSTEMS  here come all the verbstems \\
+ mâto IACONJ "cry" ;  GG
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/verbs.lexc](http://github.com/giellalt/lang-crj/blob/main/../src/fst/stems/verbs.lexc)</small>
+# South East Cree numerals                           
+
+## The file for numerals
+
+ * LEXICON Numerals 
+
+
+ * LEXICON NUM  adds +Num+Ipc
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/numerals.lexc](http://github.com/giellalt/lang-crj/blob/main/../src/fst/stems/numerals.lexc)</small>=================================== !
+The Southern East Cree morphophonological/twolc rules file !
+=================================== !
+
+
+
+
+
+
+
+
+* *primus%>s*
+* *primus00*
+
+
+* examples:*
+
+* examples:*
+
+
+* examples:*
+
+* examples:*
+* * *
+<small>This (part of) documentation was generated from [../src/fst/phonology.twolc](http://github.com/giellalt/lang-crj/blob/main/../src/fst/phonology.twolc)</small>
 
 
 
@@ -1013,7 +1024,8 @@ Prefixes with a certain phonological content:
 % sárggis% :%-   Root ; 
 % násti% :%*     Root ; 
 
-
+* * *
+<small>This (part of) documentation was generated from [../src/transcriptions/transcriptor-numbers-digit2text.lexc](http://github.com/giellalt/lang-crj/blob/main/../src/transcriptions/transcriptor-numbers-digit2text.lexc)</small>
 
 
 We describe here how abbreviations are in Southern East Cree are read out, e.g.
@@ -1029,8 +1041,9 @@ For example:
  * esim.:esimerkiksi # ; 
 
 
-
-      [ L A N G U A G E ]  G R A M M A R   C H E C K E R
+* * *
+<small>This (part of) documentation was generated from [../src/transcriptions/transcriptor-abbrevs2text.lexc](http://github.com/giellalt/lang-crj/blob/main/../src/transcriptions/transcriptor-abbrevs2text.lexc)</small>
+[ L A N G U A G E ]  G R A M M A R   C H E C K E R
 
 
 
@@ -1440,3 +1453,5 @@ expression **WORD - premodifiers**.
 
 
 
+* * *
+<small>This (part of) documentation was generated from [../tools/grammarcheckers/grammarchecker.cg3](http://github.com/giellalt/lang-crj/blob/main/../tools/grammarcheckers/grammarchecker.cg3)</small>

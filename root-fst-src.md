@@ -230,3 +230,5 @@ Prefixes with a certain phonological content:
  * Particles ;          
  * Numerals ;            
 
+* * *
+<small>This (part of) documentation was generated from [../src/fst/root.lexc](http://github.com/giellalt/lang-crj/blob/main/../src/fst/root.lexc)</small>
