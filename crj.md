@@ -606,87 +606,13 @@ These were the set types.
 
 
 * * *
-<small>This (part of) documentation was generated from [../src/cg3/functions.cg3](http://github.com/giellalt/lang-crj/blob/main/../src/cg3/functions.cg3)</small>=================================== !
-The Southern East Cree morphophonological/twolc rules file !
-=================================== !
-
-
-
-
-
-
-
-
-* *primus%>s*
-* *primus00*
-
-
-* examples:*
-
-* examples:*
-
-
-* examples:*
-
-* examples:*
-* * *
-<small>This (part of) documentation was generated from [../src/fst/phonology.twolc](http://github.com/giellalt/lang-crj/blob/main/../src/fst/phonology.twolc)</small>
-# Innu (Montagnais) particles                      \
-
-
-The file                                                                     
-
- * LEXICON pcle  adds +Ipc                                             
-
-
- * LEXICON Particles  \\                                               
- * cî+Ipc+Qst:cî # ;                                                   
- * namoya+Ipc+Neg:namoya # ;                                           
-
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/stems/particles.lexc](http://github.com/giellalt/lang-crj/blob/main/../src/fst/stems/particles.lexc)</small># South East Cree noun stems                           
-
-
-STEMS adds an affixmark and redirects to STEMLIST
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/stems/nouns.lexc](http://github.com/giellalt/lang-crj/blob/main/../src/fst/stems/nouns.lexc)</small>
-# South East Cree numerals                           
-
-## The file for numerals
-
- * LEXICON Numerals 
-
-
- * LEXICON NUM  adds +Num+Ipc
-* * *
-<small>This (part of) documentation was generated from [../src/fst/stems/numerals.lexc](http://github.com/giellalt/lang-crj/blob/main/../src/fst/stems/numerals.lexc)</small>## South Eastern Cree pronouns
-
-There are more pronoums to be added here.
-
- LEXICON Pronoun 
-
-
- LEXICON Personal  \\
- niya+Pron+Pers+1Sg:niya # ; 
-* * *
-<small>This (part of) documentation was generated from [../src/fst/stems/pronouns.lexc](http://github.com/giellalt/lang-crj/blob/main/../src/fst/stems/pronouns.lexc)</small># Verb stems
-
-
- LEXICON VERBLIST   just adds the prefix boundary
-
- LEXICON VERBSTEMS  here come all the verbstems \\
- mâto IACONJ "cry" ;  GG
-* * *
-<small>This (part of) documentation was generated from [../src/fst/stems/verbs.lexc](http://github.com/giellalt/lang-crj/blob/main/../src/fst/stems/verbs.lexc)</small>
+<small>This (part of) documentation was generated from [../src/cg3/functions.cg3](http://github.com/giellalt/lang-crj/blob/main/../src/cg3/functions.cg3)</small>
 # Southern East Cree morphological analyser
 INTRODUCTION TO MORPHOLOGICAL ANALYSER OF Southern East Cree LANGUAGE.
 
 This is copied from Plains Cree
 
- # Definitions for Multichar_Symbols
+# Definitions for Multichar_Symbols@CODE@
 
 ## Analysis symbols
 
@@ -706,7 +632,7 @@ POS
  * +Interj      
  * +Pron        
  * +Num         
- * +Symbol = independent symbols in the text stream, like £, €, ©
+* +Symbol© = independent symbols in the text stream, like £, €, ©
 
  * +Loc         Locative
 
@@ -832,29 +758,29 @@ These are documented in Chapter 8 of Beesley/Karttunen, p. 456 zB.
 We have manually optimised the structure of our lexicon using following
 flag diacritics to restrict morhpological combinatorics - only allow compounds
 with verbs if the verb is further derived into a noun again:
- |  @P.NeedNoun.ON@ | (Dis)allow compounds with verbs unless nominalised
- |  @D.NeedNoun.ON@ | (Dis)allow compounds with verbs unless nominalised
- |  @C.NeedNoun@ | (Dis)allow compounds with verbs unless nominalised
+|  @P.NeedNoun.ON@nominalised | (Dis)allow compounds with verbs unless nominalised
+|  @D.NeedNoun.ON@nominalised | (Dis)allow compounds with verbs unless nominalised
+|  @C.NeedNoun@nominalised | (Dis)allow compounds with verbs unless nominalised
 
 For languages that allow compounding, the following flag diacritics are needed
 to control position-based compounding restrictions for nominals. Their use is
 handled automatically if combined with +CmpN/xxx tags. If not used, they will
 do no harm.
- |  @P.CmpFrst.FALSE@ | Require that words tagged as such only appear first
- |  @D.CmpPref.TRUE@ | Block such words from entering ENDLEX
- |  @P.CmpPref.FALSE@ | Block these words from making further compounds
- |  @D.CmpLast.TRUE@ | Block such words from entering R
- |  @D.CmpNone.TRUE@ | Combines with the next tag to prohibit compounding
- |  @U.CmpNone.FALSE@ | Combines with the prev tag to prohibit compounding
- |  @P.CmpOnly.TRUE@ | Sets a flag to indicate that the word has passed R
- |  @D.CmpOnly.FALSE@ | Disallow words coming directly from root.
+|  @P.CmpFrst.FALSE@first | Require that words tagged as such only appear first
+|  @D.CmpPref.TRUE@ENDLEX | Block such words from entering ENDLEX
+|  @P.CmpPref.FALSE@compounds | Block these words from making further compounds
+|  @D.CmpLast.TRUE@R | Block such words from entering R
+|  @D.CmpNone.TRUE@compounding | Combines with the next tag to prohibit compounding
+|  @U.CmpNone.FALSE@compounding | Combines with the prev tag to prohibit compounding
+|  @P.CmpOnly.TRUE@R | Sets a flag to indicate that the word has passed R
+|  @D.CmpOnly.FALSE@root. | Disallow words coming directly from root.
 
 Use the following flag diacritics to control downcasing of derived proper
 nouns (e.g. Finnish Pariisi -> pariisilainen). See e.g. North Sámi for how to use
 these flags. There exists a ready-made regex that will do the actual down-casing
 given the proper use of these flags.
- |  @U.Cap.Obl@ | Allowing downcasing of derived names: deatnulasj.
- |  @U.Cap.Opt@ | Allowing downcasing of derived names: deatnulasj.
+|  @U.Cap.Obl@deatnulasj. | Allowing downcasing of derived names: deatnulasj.
+|  @U.Cap.Opt@deatnulasj. | Allowing downcasing of derived names: deatnulasj.
 
 For indicative, there are prefixes, so here we need one
 flag for each person-number combination. Note that
@@ -970,7 +896,81 @@ found in the section "Suffixes" right underneath.
 
  LEXICON IACONJ  splits in 4 moods
 * * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/verbs.lexc](http://github.com/giellalt/lang-crj/blob/main/../src/fst/affixes/verbs.lexc)</small>
+<small>This (part of) documentation was generated from [../src/fst/affixes/verbs.lexc](http://github.com/giellalt/lang-crj/blob/main/../src/fst/affixes/verbs.lexc)</small>=================================== !
+The Southern East Cree morphophonological/twolc rules file !
+=================================== !
+
+
+
+
+
+
+
+
+* *primus%>s*
+* *primus00*
+
+
+* examples:*
+
+* examples:*
+
+
+* examples:*
+
+* examples:*
+* * *
+<small>This (part of) documentation was generated from [../src/fst/phonology.twolc](http://github.com/giellalt/lang-crj/blob/main/../src/fst/phonology.twolc)</small>
+# Innu (Montagnais) particles                      \
+
+
+The file                                                                     
+
+ * LEXICON pcle  adds +Ipc                                             
+
+
+ * LEXICON Particles  \\                                               
+ * cî+Ipc+Qst:cî # ;                                                   
+ * namoya+Ipc+Neg:namoya # ;                                           
+
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/particles.lexc](http://github.com/giellalt/lang-crj/blob/main/../src/fst/stems/particles.lexc)</small># South East Cree noun stems                           
+
+
+STEMS adds an affixmark and redirects to STEMLIST
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/nouns.lexc](http://github.com/giellalt/lang-crj/blob/main/../src/fst/stems/nouns.lexc)</small>## South Eastern Cree pronouns
+
+There are more pronoums to be added here.
+
+ LEXICON Pronoun 
+
+
+ LEXICON Personal  \\
+ niya+Pron+Pers+1Sg:niya # ; 
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/pronouns.lexc](http://github.com/giellalt/lang-crj/blob/main/../src/fst/stems/pronouns.lexc)</small># Verb stems
+
+
+ LEXICON VERBLIST   just adds the prefix boundary
+
+ LEXICON VERBSTEMS  here come all the verbstems \\
+ mâto IACONJ "cry" ;  GG
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/verbs.lexc](http://github.com/giellalt/lang-crj/blob/main/../src/fst/stems/verbs.lexc)</small>
+# South East Cree numerals                           
+
+## The file for numerals
+
+ * LEXICON Numerals 
+
+
+ * LEXICON NUM  adds +Num+Ipc
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/numerals.lexc](http://github.com/giellalt/lang-crj/blob/main/../src/fst/stems/numerals.lexc)</small>
 
 
 We describe here how abbreviations are in Southern East Cree are read out, e.g.
