@@ -20,9 +20,9 @@ found at the end of this file.
 
 ## The declensions for Animates 
 
- * LEXICON ANDECL  for the animate declension
+* LEXICON ANDECL  for the animate declension
 
- * LEXICON ANABSDECL  for the animate absolute declension
+* LEXICON ANABSDECL  for the animate absolute declension
 
 * * *
 <small>This (part of) documentation was generated from [../src/fst/affixes/nouns.lexc](http://github.com/giellalt/lang-crj/blob/main/../src/fst/affixes/nouns.lexc)</small>

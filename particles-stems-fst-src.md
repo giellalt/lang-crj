@@ -4,12 +4,12 @@
 
 The file                                                                     
 
- * LEXICON pcle  adds +Ipc                                             
+* LEXICON pcle  adds +Ipc                                             
 
 
- * LEXICON Particles  \\                                               
- * cî+Ipc+Qst:cî # ;                                                   
- * namoya+Ipc+Neg:namoya # ;                                           
+* LEXICON Particles  \\                                               
+* cî+Ipc+Qst:cî # ;                                                   
+* namoya+Ipc+Neg:namoya # ;                                           
 
 
 
