@@ -37,8 +37,6 @@ POS
 * +Med	     Demonstrative Medial
 * +Dist	     Demonstrative Distal
 
-
-
 Verbal MSP
 * +Prs   
 * +Fut  
@@ -55,9 +53,6 @@ Verbal MSP
 * +Imm   Immediate imperative, consider deleting +Imp tag
 * +Sbj   Subjunctive, aka Conjunct mode, ê-
 * +Cond  TODO: Should Future Conditional be tagget Fut only? Conor: we will split the Future tags
-
-
-
 
 * +1Sg     first singular
 * +2Sg     etc
@@ -110,7 +105,6 @@ Nominal MSP
 * +AN		  animate noun
 * +IN		  inanimate noun
 
-
 * +Incl     me too, etc.
 * +Qst      yes-no question particle ci
 
@@ -131,7 +125,6 @@ morphophonological structure
 * ^%EGLOT    glottal stop after e, for eh- in conjunctive mood
 * ^%EA      ê to â in 1, 2 person of ê-stems
 
-
 ## Usage tags
 
 These tags distinguish different special-purpose analysers
@@ -140,8 +133,6 @@ normative and descriptive analysers, and generators for different purposes.
 
 * +Err/Orth  tag for substandard forms
 * +Use/NG   not-generate, for ped generation isme-ped.fst
-
-
 
 Flagdiacritics 
 
@@ -180,8 +171,6 @@ for the inverse objective conjugation, the flag refers to
 the **prefix**, not to the subject. So *indsg1* refers to either
 subject = 1Sg or object = 1Sg. The 3-3 forms are prefixless.
 
-
-
 The conjunctive always has
 the ê- prefix, and future conditional never has a prefix.
 
@@ -195,7 +184,6 @@ Prefixes with a certain phonological content:
 * @U.perspref.NULL@   test
 * @U.perspref.NI@   test
 * @U.perspref.KI@   test
-
 
 * @U.verb.1sgindep@ 
 * @U.verb.2sgindep@ 
@@ -219,7 +207,6 @@ Prefixes with a certain phonological content:
 * @U.noun.abs@  
 * @U.noun.dep@ 
 
-
  LEXICON Root          is where it all starts
 
 * NounPrefixes ;        
@@ -231,4 +218,8 @@ Prefixes with a certain phonological content:
 * Numerals ;            
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/root.lexc](http://github.com/giellalt/lang-crj/blob/main/../src/fst/root.lexc)</small>
+
+<small>This (part of) documentation was generated from [src/fst/root.lexc](https://github.com/giellalt/lang-crj/blob/main/src/fst/root.lexc)</small>
+
+---
+
