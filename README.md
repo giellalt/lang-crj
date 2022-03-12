@@ -2,7 +2,7 @@ The Southern East Cree morphology and tools
 ==========================================
 
 [![GitHub issues](https://img.shields.io/github/issues-raw/giellalt/lang-crj)](https://github.com/giellalt/lang-crj/issues)
-[![Build Status](https://github.com/giellalt/lang-crj/workflows/Speller%20CI+CD/badge.svg)](https://github.com/giellalt/lang-crj/actions)
+[![Build Status](https://divvun-tc.thetc.se/api/github/v1/repository/giellalt/lang-crj/main/badge.svg)](https://github.com/giellalt/lang-crj/actions)
 [![License](https://img.shields.io/github/license/giellalt/lang-crj)](https://github.com/giellalt/lang-crj/blob/main/LICENSE)
 
 This repository contains finite state source files for the Southern East Cree language,
