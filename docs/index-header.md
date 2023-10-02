@@ -1,6 +1,5 @@
 # Southern East Cree documentation
 
-[![Maturity: Experiment](https://img.shields.io/badge/Maturity-Experiment-black.svg)](https://giellalt.github.io/MaturityClassification.html)
 ![Lemma count](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fgiellalt%2Flang-crj%2Fgh-pages%2Flemmacount.json)
 [![License](https://img.shields.io/github/license/giellalt/lang-crj)](https://github.com/giellalt/lang-crj/blob/main/LICENSE)
 [![Issues](https://img.shields.io/github/issues/giellalt/lang-crj)](https://github.com/giellalt/lang-crj/issues)
