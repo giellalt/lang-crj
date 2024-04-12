@@ -12,6 +12,3 @@ The file
 * * *
 
 <small>This (part of) documentation was generated from [src/fst/morphology/stems/particles.lexc](https://github.com/giellalt/lang-crj/blob/main/src/fst/morphology/stems/particles.lexc)</small>
-
----
-
