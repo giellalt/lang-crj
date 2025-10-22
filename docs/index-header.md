@@ -5,6 +5,7 @@
 [![License](https://img.shields.io/github/license/giellalt/lang-crj)](https://github.com/giellalt/lang-crj/blob/main/LICENSE)
 [![Issues](https://img.shields.io/github/issues/giellalt/lang-crj)](https://github.com/giellalt/lang-crj/issues)
 [![Build Status](https://builds.giellalt.org/api/badge/lang-crj?label=CI)](https://builds.giellalt.org/pipelines/lang-crj/builds/latest)
+[![Glottolog](https://img.shields.io/badge/Glottolog-green)](https://glottolog.org/resource/languoid/id/__GLOTTOLOG_ID__)
 
 This page documents the work on the **Southern East Cree language model**. 
 
