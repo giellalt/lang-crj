@@ -4,7 +4,8 @@
 ![Lemma count](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fgiellalt%2Flang-crj%2Fgh-pages%2Flemmacount.json)
 [![License](https://img.shields.io/github/license/giellalt/lang-crj)](https://github.com/giellalt/lang-crj/blob/main/LICENSE)
 [![Issues](https://img.shields.io/github/issues/giellalt/lang-crj)](https://github.com/giellalt/lang-crj/issues)
-[![Build Status](https://divvun-tc.giellalt.org/api/github/v1/repository/giellalt/lang-crj/main/badge.svg)](https://github.com/giellalt/lang-crj/actions)
+[![Build Status](https://builds.giellalt.org/api/badge/lang-crj?label=CI)](https://builds.giellalt.org/pipelines/lang-crj/builds/latest)
+[![Glottolog](https://img.shields.io/badge/Glottolog-green)](https://glottolog.org/resource/languoid/id/sout2978)
 
 This page documents the work on the **Southern East Cree language model**. 
 
