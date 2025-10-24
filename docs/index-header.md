@@ -1,11 +1,19 @@
 # Southern East Cree documentation
 
+<div class="twocolumn map" markdown="1">
+
 [![Maturity](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fgiellalt%2Flang-crj%2Fgh-pages%2Fmaturity.json)](https://giellalt.github.io/MaturityClassification.html)
 ![Lemma count](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fgiellalt%2Flang-crj%2Fgh-pages%2Flemmacount.json)
 [![License](https://img.shields.io/github/license/giellalt/lang-crj)](https://github.com/giellalt/lang-crj/blob/main/LICENSE)
 [![Issues](https://img.shields.io/github/issues/giellalt/lang-crj)](https://github.com/giellalt/lang-crj/issues)
 [![Build Status](https://builds.giellalt.org/api/badge/lang-crj?label=CI)](https://builds.giellalt.org/pipelines/lang-crj/builds/latest)
 [![Glottolog](https://img.shields.io/badge/Glottolog-green)](https://glottolog.org/resource/languoid/id/sout2978)
+
+{% include_relative language-map.md %}
+
+Center location data taken from [Glottolog](https://glottolog.org/). Area extent is local data. Both can be adjusted if wrong - file a pull request!
+
+</div>
 
 This page documents the work on the **Southern East Cree language model**. 
 
